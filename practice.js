@@ -1,30 +1,104 @@
 
+// // let promise = new Promise((resolve, reject) => {
+// //     console.log("i am promise")
+// //     reject("error");
+// // })
+
+// // const getPromise = () => {
+// //     return new Promise((resolve, reject) => {
+// //     console.log("i am promise")
+// //     reject("error");
+// // });
+// // };
+
+// // let promise = getPromise();
+// // promise.then(() => {
+// //     console.log("promise fullfilled");
+// // })
+// // promise.catch(() => {
+// //     console.log("rejected");
+// // })
+// // function getData(dataId, getNextData) {
+// //     return new Promise((resolve, reject) => {
+// //             setTimeout(( )=> {
+// //  console.log("data", dataId);
+// //  resolve("success");
+// //  if(getNextData){
+// //     getNextData();
+// //  }
+// //     }, 5000);
+// //     })
+// // }
 
 
+// function asyncFunc() {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("some data")
+//             resolve("success");
+//         },4000);
+//     });
+// }
+// function asyncFunc2() {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("some data 2")
+//             resolve("success");
+//         },4000);
+//     });
+// }
+
+// // let p1 = asyncFunc();
+
+// asyncFunc().then(()=> {
+//     console.log("fetching data 1");
+//     // let p2 = asyncFunc2();
+
+// asyncFunc2().then(()=> {
+//     console.log("fetching data 2");
+// })
+// })
+
+// async function hello(){
+//     console.log("hello");
+// }
+
+// function getData(dataId, getNextData) {
+//     setTimeout(( )=> {
+//  console.log("data", dataId);
+//  if(getNextData){
+//     getNextData();
+//  }
+//     }, 2000);
+   
+// }
 
 
+// getData(1,()=>{
+//     getData(2, ()=>{
+//         getData(3)
+//     });
+// });
 
+// console.log("one");
+// console.log("two");
+// console.log("three");
+// function hello() {
+//     console.log("hello");
+// }
 
+// setTimeout(() => {
+//     console.log("hello");
+// }, 2000)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log("four");
+// function sum(a,b) {
+//     console.log(a+b);
+// }
+// function calculator(a,b,sumCallBack){
+//     sumCallBack(a,b)
+// }
+// calculator(1,2,sum);
 // let a  = 5;
 // let b = 10;
 // try{
